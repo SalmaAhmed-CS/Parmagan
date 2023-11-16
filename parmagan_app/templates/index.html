@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+{% load static %}
+<html style="font-size: 16px;" lang="ar"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="تحليل التركيب, فرن كهربائى, أمثلة">
+    <meta name="description" content="">
+    <title>برمجان</title>
+    <link rel="stylesheet" href="{% static 'css/nicepage.css' %}" media="screen">
+    <link rel="stylesheet" href="{% static 'css/Home.css' %}" media="screen">
+    <script class="u-script" type="text/javascript" src= "{% static 'css/jquery.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'css/nicepage.js' %}"defer=""></script>
+    <meta name="generator" content="Nicepage 5.15.1, nicepage.com">
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
+
+
+
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <style>
+         .search-container {
+    position: relative;
+    max-width: 400px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.search-button {
+   height:50px;
+    width:100px;
+    position: absolute;
+    margin-top: 5%;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: #00414B;
+    color: #fff;
+    border: none;
+    border-radius: 0 9.8px 9.8px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-button:hover {
+height:50px;
+    width:100px;
+ position: absolute;
+    margin-top: 5%;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 0 9.8px 9.8px 0;
+    cursor: pointer;
+    font-size: 16px;
+
+
+      background-color: #056B75;
+}
+
+.notification {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ position: fixed;
+  left: 10%;
+
+  display: flex;
+   padding: 0 1.25rem;
+  text-align: right;
+  flex-direction: column;
+  isolation: isolate;
+  position: relative;
+  width: 60rem;
+  height: 50rem;
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  --gradient: linear-gradient(to bottom, #fff, #056B75, #00414B);
+  --color: #00414B
+}
+
+.notification:before {
+  position: absolute;
+  content: "";
+  inset: 0.0625rem;
+  border-radius: 0.9375rem;
+  background: #fff;
+  z-index: 2
+}
+
+.notification:after {
+  position: absolute;
+  content: "";
+  width: 0.25rem;
+  inset: 0.65rem auto 0.65rem 0.5rem;
+  border-radius: 0.125rem;
+  background: var(--gradient);
+  transition: transform 300ms ease;
+  z-index: 4;
+}
+
+.notification:hover:after {
+  transform: translateX(0.15rem)
+}
+
+.notititle {
+  color: var(--color);
+  padding: 0.65rem 0.25rem 0.4rem 1.25rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: transform 300ms ease;
+  z-index: 5;
+}
+
+.notification:hover .notititle {
+  transform: translateX(0.15rem)
+}
+
+.notibody {
+  color: #056B75;
+  padding: 0 1.25rem;
+  transition: transform 300ms ease;
+  z-index: 5;
+}
+
+.notification:hover .notibody {
+  transform: translateX(0.25rem)
+}
+
+.notiglow,
+.notiborderglow {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle closest-side at center, white, transparent);
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.notiglow {
+  z-index: 3;
+}
+
+.notiborderglow {
+  z-index: 1;
+}
+
+.notification:hover .notiglow {
+  opacity: 0.1
+}
+
+.notification:hover .notiborderglow {
+  opacity: 0.1
+}
+
+.note {
+  color: var(--color);
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 0.9rem;
+  width: 75%;
+}
+
+    </style>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body data-home-page="Home.html" data-home-page-title="Home" class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-image u-header" id="sec-becb" data-image-width="1217" data-image-height="768"><div class="u-clearfix u-sheet u-sheet-1">
+
+      </div></header>
+    <section class="u-clearfix u-image u-section-1" id="sec-fe77" data-image-width="1217" data-image-height="668">
+      <div class="u-clearfix u-sheet u-valign-middle-xs u-sheet-1">
+          <div class="search-container">
+            <form  method="post" >
+                {% csrf_token %}
+              <input class="search-input" type="text" placeholder="كلمة البحث" id="word" name="word">
+              <button class="search-button" type="submit">ابحث<i class="fa fa-search"></i></button>
+            </form>
+          </div>
+      </div>
+    </section>
+         <h2  style="color:#00414B;   top: 80%;
+  right: 15%;  text-align: right; padding: 0 1.25rem;">تحليلات الكلمة </h2>
+   {% if extracted_data %}
+    {% for entry in extracted_data %}
+
+        <br>
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="notification">
+    <div class="notititle"><h2>{{ entry.word_form }}</h2></div>
+    <div class="notibody"><h3>{{ entry.definition }} </h3></div>
+
+             <div class="notititle"><h2>أمثلة</h2></div>
+              <div class="notibody"><ul>
+                {% for example in entry.examples %}
+                  <div class="notibody"><h3>  {{ example }}</h3></div>
+
+                        {% endfor %}
+              </ul>
+              </div>
+             <div class="notititle"><h2>مثال صَدَف </h2></div>
+            <div class="notibody"><h3>  {{ entry.examples_Sadaf }}</h3></div>
+            <div class="notibody"><ul>
+                {% for ans in entry.all_ans %}
+                  <div class="notibody"><h3>  {{ ans }}</h3></div>
+
+                        {% endfor %}
+            </ul>
+            </div>
+            <div class="notibody">
+                 <div class="notititle"><h2>مثال صَدَف </h2></div>
+                    {% if entry.image_url %}
+                <img src="{{ entry.image_url }}" width="200" height="200" alt="Generated Image">
+                    {% else %}
+                <p>لم يتم توليد صورة مناسبة</p>
+                    {% endif %}
+            </div>
+
+
+
+
+
+
+  </div>
+      </div>
+
+  {% endfor %}
+
+  {% else %}
+        <p>No data available.</p>
+    {% endif %}
+    <footer class="u-align-center u-clearfix u-footer u-image u-footer" id="sec-b2d1" data-image-width="1217" data-image-height="768"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Sample text. Click to select the Text Element.</p>
+      </div></footer>
+
+
+</body></html>
