@@ -10,7 +10,7 @@ from IPython.display import Image, display
 
 def first (word):
     # reem code
-    openai.api_key = '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'
+    openai.api_key = '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'
 
     def get_completion(prompt, model="gpt-3.5-turbo"):
 
@@ -84,7 +84,7 @@ def first (word):
                     prompts = prompt[3]
 
                 # Set your OpenAI API key
-                openai.api_key = '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'
+                openai.api_key = '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'
 
                 string = "قم برسم المثال الذي يظهر بالنص التالي: \n"
 
@@ -120,7 +120,7 @@ def first (word):
 
 
 def scound (word):
-    openai.api_key = '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'
+    openai.api_key = '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'
 
     def get_completion(prompt, model="gpt-3.5-turbo"):
         messages = [{"role": "user", "content": prompt}]
