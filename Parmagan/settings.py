@@ -9,23 +9,19 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
-<<<<<<< HEAD
+
 
 from pathlib import Path
-=======
+
 import os
 from pathlib import Path
 import  parmagan_app
->>>>>>> 43c7541 (scound commit)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 43c7541 (scound commit)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
@@ -47,10 +43,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-<<<<<<< HEAD
-=======
+
     "parmagan_app"
->>>>>>> 43c7541 (scound commit)
+
 ]
 
 MIDDLEWARE = [
@@ -68,11 +63,11 @@ ROOT_URLCONF = 'Parmagan.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-<<<<<<< HEAD
+
         'DIRS': [],
-=======
+
         'DIRS': [os.path.join(BASE_DIR , 'Parmagan_app/templates')],
->>>>>>> 43c7541 (scound commit)
+
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -133,28 +128,27 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-<<<<<<< HEAD
-STATIC_URL = 'static/'
-=======
+
+
+
 STATIC_URL = '/static/'
 STATICFILES_DIRS =[
-    os.path.join(BASE_DIR,'static'),
+    os.path.join(BASE_DIR,'Parmagan_app/static'),
 ]
 COMPRESS_PRECOMPILERS = (
     ('text/x-scss', 'django_libsass.SassCompiler'),
 )
 
->>>>>>> 43c7541 (scound commit)
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-<<<<<<< HEAD
-=======
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL='/media/'
 MEDIA_ROOT=BASE_DIR/'media'
->>>>>>> 43c7541 (scound commit)
+

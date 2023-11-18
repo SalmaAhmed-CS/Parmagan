@@ -1,8 +1,8 @@
 from django.shortcuts import render
-<<<<<<< HEAD
+
 
 # Create your views here.
-=======
+from .forms import searchform
 import requests
 import openai
 from IPython.display import Image, display
@@ -77,6 +77,7 @@ def first (word):
                 prompts = ""
                 if "محسوس" in prompt[2]:
                     prompts = prompt[3]
+                #
                 elif "فعل مضارع" not in definition and "جمع التكسير" not in definition:
                     prompts = word_form + ": " + definition
                 else:
@@ -288,11 +289,12 @@ def scound (word):
 
 def index(request):
     if request.method == 'POST':
+        form = searchform(request.POST)
         word = request.POST['word']
         extracted_data = first(word)
         # all_ans = scound(word)
-        return render(request, 'index.html', {"extracted_data": extracted_data})
+        return render(request, 'index.html', {"extracted_data": extracted_data,"form":form})
         # return render(request, 'index.html',{"extracted_data":extracted_data,"all_ans":all_ans} )
     else:
        return render(request, 'index.html')
->>>>>>> 43c7541 (scound commit)
+
