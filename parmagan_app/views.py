@@ -6,11 +6,14 @@ from .forms import searchform
 import requests
 import openai
 from IPython.display import Image, display
-
+import os
 
 def first (word):
     # reem code
-    openai.api_key = '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'
+    # openai.api_key = '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'
+
+
+    openai.api_key = os.environ.get("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")
 
     def get_completion(prompt, model="gpt-3.5-turbo"):
 
@@ -31,7 +34,6 @@ def first (word):
         ### end code reem ###
 
     ### ah mogam api
-
 
     url = "https://siwar.ksaa.gov.sa/api/alriyadh/search?query=" + word
     headers = {
@@ -84,8 +86,8 @@ def first (word):
                     prompts = prompt[3]
 
                 # Set your OpenAI API key
-                openai.api_key = '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'
-
+                # openai.api_key = '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'
+                openai.api_key = os.environ.get("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")
                 string = "قم برسم المثال الذي يظهر بالنص التالي: \n"
 
                 # Make a request to the DALL-E 3 API
@@ -120,8 +122,8 @@ def first (word):
 
 
 def scound (word):
-    openai.api_key = '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'
-
+    # openai.api_key = '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'
+    openai.api_key = os.environ.get("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")
     def get_completion(prompt, model="gpt-3.5-turbo"):
         messages = [{"role": "user", "content": prompt}]
         response = openai.ChatCompletion.create(
@@ -272,29 +274,34 @@ def scound (word):
                 prompt = f"ضع كلمة '{word}' في جملة واحدة مفيدة لا دينية بحيث تدل على العلاقة التالية: {dic[word][i]}. وضع النتيجة في الشكل التالي:\nالكلمة:\nالعلاقة:\nالجملة:"
                 print(prompt)
                 response = get_completion(prompt)
+                print(response)
                 one = response.split("\n")
+
                 all_ans.append({
-                    "word": one[1],
-                    "relationship": one[3],
-                    "sentence": one[5],
+                    "word": one[0].replace("الكلمة:",""),
+                    "relationship": one[1].replace("العلاقة:",""),
+                    "sentence": one[2].replace("الجملة:",""),
                 })
 
             return  all_ans
         else:
+            all_ans = []
+
             print(f"Word '{word}' not found in the dictionary.")
-            return  "Word '{word}' not found in the dictionary"
+            return  all_ans
     else:
+        all_ans = []
         print(f"Failed to fetch data: {response.status_code}")
-        return  "Failed to fetch data: {response.status_code}"
+        return   all_ans
 
 def index(request):
     if request.method == 'POST':
         form = searchform(request.POST)
         word = request.POST['word']
         extracted_data = first(word)
-        # all_ans = scound(word)
-        return render(request, 'index.html', {"extracted_data": extracted_data,"form":form})
-        # return render(request, 'index.html',{"extracted_data":extracted_data,"all_ans":all_ans} )
+        all_ans = scound(word)
+        # return render(request, 'index.html', {"extracted_data": extracted_data,"form":form})
+        return render(request, 'index.html',{"extracted_data":extracted_data,"all_ans":all_ans} )
     else:
        return render(request, 'index.html')
 
