@@ -36,7 +36,7 @@ ALLOWED_HOSTS = ["baean.onrender.com"]
 
 
 # Application definition
-openai.api_key = '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'
+openai.api_key = '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'
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',

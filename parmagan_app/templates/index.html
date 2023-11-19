@@ -59,8 +59,9 @@
     <script class="u-script" type="text/javascript" src=" {% static 'js/nicepage.js' %} " defer=""></script>
     <meta name="generator" content="Nicepage 5.15.1, nicepage.com">
     <meta name="referrer" content="origin">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Changa:wght@300&family=Poppins:wght@300;400;500;600&family=Roboto&display=swap" rel="stylesheet">
 
 
 
@@ -77,8 +78,10 @@
   <body class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-image u-header" id="sec-becb" data-image-width="1217" data-image-height="768"><div class="u-clearfix u-sheet u-sheet-1"></div></header>
     <section class="u-clearfix u-image u-section-1" id="sec-fe77" data-image-width="1217" data-image-height="768">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-align-right-2 u-text u-text-default u-text-white u-text-1">بيان </h1>
-
+        <h1 class="u-align-right-2 u-text u-text-default u-text-white u-text-1">بيان لتقريب المعنى للهجة العامية </h1>
+  </div>
+        <h1 class="u-align-left u-text u-text-default u-text-white u-text-2">&nbsp;لتقريب المعنى للغة عالمية</h1>
+      </div>
         <div class="u-form u-form-1">
           <div class="u-form u-form-1">
         <form method="post">
@@ -111,10 +114,10 @@
             {% for entry in extracted_data %}
         <div class="u-align-right u-container-style u-gradient u-group u-radius-28 u-shape-round u-group-1">
           <div class="u-container-layout u-valign-bottom-xs u-container-layout-1">
-            <h3 class="u-text u-text-custom-color-1 u-text-default u-text-2">{{entry.word_form}}</h3><span class="u-file-icon u-icon u-text-custom-color-1 u-icon-2"><img src=" {% static '149630-618fcfdf.png' %}" alt=""></span>
+            <h3 class="u-text u-text-custom-color-1 u-text-default u-text-2">{{entry.word_form}}</h3><span class="u-file-icon u-icon u-text-custom-color-1 u-icon-2"><img src=" {% static 'img/149630-618fcfdf.png' %}" alt=""></span>
             <div class="u-align-right u-container-style u-custom-color-2 u-expanded-width-sm u-expanded-width-xs u-group u-radius-28 u-shape-round u-group-2">
               <div class="u-container-layout u-valign-middle u-container-layout-2">
-                  <span style="color:#056b75">تعريف من معجم الرياض</span>
+                  <span class="u-text u-text-default u-text-grey-40 u-text-9" >تعريف من معجم الرياض</span>
                   <h3 style="width:100%" class="u-text u-text-custom-color-1 u-text-3">&nbsp;{{entry.definition}}&nbsp;</h3>
               </div>
             </div>
@@ -128,7 +131,7 @@
               {% for example in entry.examples %}
               <div class="u-align-right u-container-style u-custom-color-2 u-expanded-width-sm u-expanded-width-xs u-group u-radius-28 u-shape-round u-group-3">
               <div class="u-container-layout u-valign-middle u-container-layout-3">
-                <h3 style="width:100%" class="u-text u-text-custom-color-1 u-text-5"> {{ example }}&nbsp;</h3>
+                <h3  class="u-text u-text-custom-color-1 u-text-5"> {{ example }}&nbsp;</h3>
               </div>
             </div>
                  {% endfor %}
@@ -148,7 +151,7 @@
 	V6z M52,27h-5H12.731c-1.156,0-2.174,0.779-2.45,1.813L9,32.328V4h1v6v2v13v1h40v-1v-6h1.268C51.671,19,52,19.328,52,19.732V27z"></path></svg></span>
             <div class="u-align-right u-container-style u-custom-color-2 u-expanded-width-sm u-expanded-width-xs u-group u-radius-28 u-shape-round u-group-4">
               <div class="u-container-layout u-container-layout-4">
-                <h3 style="width:100%" class="u-text u-text-custom-color-1 u-text-7"> {{ entry.examples_Sadaf }}</h3>
+                <h3  class="u-text u-text-custom-color-1 u-text-7"> {{ entry.examples_Sadaf }}</h3>
                 <a href="Copy-of-Home.html#sec-d4c4" class="u-active-grey-40 u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-custom-color-1 u-radius-50 u-btn-1"><span class="u-icon"></span>&nbsp;اضف تعليقاً
                 </a>
               </div>
@@ -189,10 +192,10 @@
 
         <div class="u-align-right u-container-style u-gradient u-group u-radius-28 u-shape-round u-group-6">
           <div class="u-container-layout u-container-layout-6">
-            <h3 style="width:100%" class="u-text u-text-custom-color-1 u-text-default u-text-10">{{ ans.word }}</h3><span class="u-file-icon u-icon u-text-custom-color-1 u-icon-8"><img src="{% static '149630-618fcfdf.png' %}"  alt=""></span>
+            <h3  class="u-text u-text-custom-color-1 u-text-default u-text-10">{{ ans.word }}</h3><span class="u-file-icon u-icon u-text-custom-color-1 u-icon-8"><img src="{% static 'img/149630-618fcfdf.png' %}"  alt=""></span>
             <div class="u-align-right u-container-style u-custom-color-2 u-expanded-width-sm u-expanded-width-xs u-group u-radius-28 u-shape-round u-group-7">
               <div class="u-container-layout u-valign-middle u-container-layout-7">
-                <h3 style="width:100%" class="u-text u-text-custom-color-1 u-text-11">&nbsp;{{ ans.relationship }}&nbsp;</h3>
+                <h3 class="u-text u-text-custom-color-1 u-text-11">&nbsp;{{ ans.relationship }}&nbsp;</h3>
               </div>
             </div>
             <h3 class="u-text u-text-custom-color-1 u-text-default u-text-12">أمثلة بيان</h3><span class="u-border-2 u-border-custom-color-1 u-icon u-icon-circle u-text-custom-color-1 u-icon-9"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 60 60" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-0d5c"></use></svg><svg class="u-svg-content" viewBox="0 0 60 60" x="0px" y="0px" id="svg-0d5c" style="enable-background:new 0 0 60 60;"><path d="M57.49,27H54v-7.268C54,18.226,52.774,17,51.268,17H50v-2.414V0H10v2H9H8H7v2H6H4v2v4H2.732C1.226,10,0,11.226,0,12.732
@@ -321,8 +324,7 @@ background-color: #f2f2f2 !important
   <body class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-image u-header" id="sec-becb" data-image-width="1217" data-image-height="768"><div class="u-clearfix u-sheet u-sheet-1"></div></header>
     <section class="u-clearfix u-image u-section-1" id="sec-fe77" data-image-width="1217" data-image-height="768">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-align-right-2 u-text u-text-default u-text-white u-text-1"> بيان</h1>
-
+        <h1 class="u-align-right u-text u-text-default u-text-white u-text-1"> بيان لتقريب المعنى للغة عالمية</h1>
           <div class="u-form u-form-1">
         <form method="post">
             {% csrf_token %}
@@ -387,15 +389,15 @@ background-color: #f2f2f2 !important
         </div>
         <div class="u-align-right u-container-style u-gradient u-group u-radius-28 u-shape-round u-group-7">
           <div class="u-container-layout u-container-layout-7">
-            <h3 class="u-text u-text-custom-color-1 u-text-default u-text-7">كلمة اليوم</h3><span class="u-file-icon u-icon u-text-custom-color-1 u-icon-2"><img src="{% static '149918-83426e59.png' %}"  alt=""></span>
-            <h3 class="u-text u-text-default u-text-8">سُيُولة&nbsp;</h3><span class="u-file-icon u-icon u-text-custom-color-1 u-icon-3"><img src="{% static '149740-1c57f334.png' %}"  alt=""></span>
+            <h3 class="u-text u-text-custom-color-1 u-text-default u-text-7">كلمة اليوم</h3><span class="u-file-icon u-icon u-text-custom-color-1 u-icon-2"><img src="{% static 'img/149918-83426e59.png' %}"  alt=""></span>
+            <h3 class="u-text u-text-default u-text-8">سُيُولة&nbsp;</h3><span class="u-file-icon u-icon u-text-custom-color-1 u-icon-3"><img src="{% static 'img/149740-1c57f334.png' %}"  alt=""></span>
             <h3 class="u-text u-text-default u-text-grey-40 u-text-9">جريان ،وتدفق&nbsp;</h3>
           </div>
         </div>
-        <div class="u-align-right u-container-style u-gradient u-group u-radius-28 u-shape-round u-group-8">
+           <div class="u-align-right u-container-style u-expanded-width-sm u-expanded-width-xs u-gradient u-group u-radius-28 u-shape-round u-group-8">
           <div class="u-container-layout u-container-layout-8">
-            <h3 class="u-text u-text-custom-color-1 u-text-default u-text-10">عن المعجم</h3><span class="u-file-icon u-icon u-text-custom-color-1 u-icon-4"><img src="{% static 'images/149831-5cd1ab88.png' %}"  alt=""></span>
-            <h3 class="u-text u-text-default u-text-11"> يضم معجم الرياض للغة العربية المعاصرة المادة اللغوية التي يحتاج إليها جميع أبناء اللغة العربية، وتنتمي مواده إلى المستوى الفصيح المعاصر. ويتميز المعجم بتطبيق مبادئ الصناعة المعجمية الحديثة في اختيار مواده وتنظيمها وشرحها وعرضها بطريقة سهلة ومفهومة للمستخدم</h3>
+            <h3 class="u-text u-text-custom-color-1 u-text-default u-text-10">عن المعجم</h3><span class="u-file-icon u-icon u-text-custom-color-1 u-icon-4"><img src="{% static 'img/149831-5cd1ab88.png' %}"  alt=""></span>
+            <h4 class="u-text u-text-default u-text-11"> يضم معجم الرياض للغة العربية المعاصرة المادة اللغوية التي يحتاج إليها جميع أبناء اللغة العربية، وتنتمي مواده إلى المستوى الفصيح المعاصر. ويتميز المعجم بتطبيق مبادئ الصناعة المعجمية الحديثة في اختيار مواده وتنظيمها وشرحها وعرضها بطريقة سهلة ومفهومة للمستخدم</h4>
           </div>
         </div>
       </div>
