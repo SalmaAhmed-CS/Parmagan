@@ -10,10 +10,10 @@ import os
 
 def first (word):
     # reem code
-    # openai.api_key = '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'
 
 
-    openai.api_key = os.environ.get("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")
+
+    openai.api_key = os.environ.get('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')
 
     def get_completion(prompt, model="gpt-3.5-turbo"):
 
@@ -86,8 +86,7 @@ def first (word):
                     prompts = prompt[3]
 
                 # Set your OpenAI API key
-                # openai.api_key = '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'
-                openai.api_key = os.environ.get("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")
+                openai.api_key = os.environ.get("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")
                 string = "قم برسم المثال الذي يظهر بالنص التالي: \n"
 
                 # Make a request to the DALL-E 3 API
@@ -122,8 +121,7 @@ def first (word):
 
 
 def scound (word):
-    # openai.api_key = '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'
-    openai.api_key = os.environ.get("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")
+    openai.api_key = os.environ.get("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")
     def get_completion(prompt, model="gpt-3.5-turbo"):
         messages = [{"role": "user", "content": prompt}]
         response = openai.ChatCompletion.create(
