@@ -1,0 +1,11 @@
+# render.yaml
+
+services:
+  - name: web
+    buildCommand: "python manage.py collectstatic --noinput"
+    startCommand: "gunicorn your_project_name.wsgi:application --workers 4 --bind 0.0.0.0:$PORT"
+    env: ["DJANGO_SETTINGS_MODULE=your_project_name.settings", "OPENAI_API_KEY=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"]
+    envVars:
+      - key: DJANGO_SECRET_KEY
+        generate: secret
+    automaticBuild: true
