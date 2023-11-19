@@ -20,7 +20,8 @@ import  parmagan_app
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
+import openai
+import os
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -35,7 +36,7 @@ ALLOWED_HOSTS = ["baean.onrender.com"]
 
 
 # Application definition
-
+openai.api_key = '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'
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
